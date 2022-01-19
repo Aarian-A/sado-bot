@@ -1,2 +1,2 @@
 # sado-bot
-Leaves a message whenever someone leaves a discord server 
+Leaves a message whenever a member departs from the discord server
