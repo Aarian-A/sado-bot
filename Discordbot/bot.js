@@ -14,4 +14,4 @@ client.on('guildMemberRemove', async(member) => {
     Channel.send('**${member.displayName}** has left ${member.guild.name}')
 })
 
-client.login('OTMzMjkzNTg4NDQ2NTkzMDM1.YefbYw.yJnFO94xavjdCyEw6-FR-AwzMKA');
+client.login('');
