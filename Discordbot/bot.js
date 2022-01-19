@@ -34,7 +34,8 @@ client.on('message', message => {
     channel.send('Resetting...')
     .then(msg => client.destroy())
     .then(() => client.login('token'));
-}
+    channel.send('Reset!')
+  }
 /*
 client.on('guildMemberRemove', async(member) => { 
     const Channel = member.guild.channels.cache.get('759670370558541845')
