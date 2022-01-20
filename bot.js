@@ -7,7 +7,7 @@ const welcome = require("./welcome");
 const prefix = "-";
 
 client.on('ready', () => {
-    console.log('Sado is online!');
+    console.log('Sado is ready to make dosas!');
     welcome(client);
 });
 
