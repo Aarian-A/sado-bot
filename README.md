@@ -1,5 +1,5 @@
 # sado-bot
-Leaves a message whenever a member departs from the discord server
+Sado is a work-in-progress, multipurpose, hyper-customizable discord bot which allows discord server admins to more efficiently manage channels. 
 
 ### Setup For Development
 Donwload NodeJS (and npm) from Nodejs
@@ -54,7 +54,7 @@ git push -d origin <branch_name>
 ```
 
 ### Credits
-Creators: Sameer, Aarian, Dario, Oscar
+Creators: **S**ameer, **A**arian, **D**ario, **O**scar <br>
 Collaborators: Tejas, Shoaib
 
 (Currently has 2 commands and leaves a message when someone joins or enters the server)
