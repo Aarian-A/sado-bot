@@ -23,11 +23,7 @@ npm install discord.js
 Now, create a "congfig.js" file and add the following:
 ```js
 module.exports = {
-    app: {
-      px: "h ",
-      token: "insert bot token here",
-      status: { content: "h help", type: "LISTENING" }
-    }
+    token: "insert bot token here"
 }
 ```
 Now you're ready to interact with the repo!
