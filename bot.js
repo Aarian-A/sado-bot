@@ -11,7 +11,6 @@ client.on('ready', () => {
     welcome(client);
 });
 
-//testing_hello
 
 /*
 //added
