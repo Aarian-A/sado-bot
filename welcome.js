@@ -1,4 +1,4 @@
-// welcome message when new user join server!
+// welcome message when new user joins server!
 
 module.exports = client => {
   const channelId = "759670370558541845"; 
