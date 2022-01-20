@@ -7,25 +7,9 @@ const welcome = require("./welcome");
 const prefix = "-";
 
 client.on('ready', () => {
-    console.log('Sado is online!');
+    console.log('Sado is ready to make dosas!');
     welcome(client);
 });
-
-//testing_hello
-
-/*
-//added
-client.on('guildMemberAdd', async(member) => { 
-  const Channel = member.guild.channels.cache.get('759670370558541845')
-  Channel.send(`**${member.displayName}** has joined ${member.guild.name}`)
-})
-
-//left
-client.on('guildMemberRemove', async(member) => { 
-  const Channel = member.guild.channels.cache.get('759670370558541845')
-  Channel.send(`**${member.displayName}** has left ${member.guild.name}`)
-})
-*/
 
 
 client.on('message', message => {
@@ -60,30 +44,6 @@ client.on('message', message => {
     .then(() => client.login(client.config.app.token));
     channel.send('Reset!')
 }
-/*
 
-//left
-client.on("guildMemberRemove", member => {
-  const welcome = member.guild.channels.cache.find(channel => channel.name === 'announcements')
-  welcome.send (`${member} fell down a hole`)
-})
-
-//left
-client.on('guildMemberRemove',(member) => {
-  client.channels.find('log_channel').send('**${member.username}** has just left server.. Bye Bye')
-})
-
-//added
-client.on("guildMemberAdd", member => {
-  const welcome = member.guild.channels.cache.find(channel => channel.name === 'announcements')
-  welcome.send (`${member} is among us`)
-})
-
-//added
-client.on('guildMemberAdd', member => {
-  member.guild.channels.get('759670370558541845').send("Welcome"); 
-});
-
-*/
 client.login(client.config.app.token);
 
