@@ -45,5 +45,5 @@ client.on('message', message => {
     channel.send('Reset!')
 }
 
-client.login(client.config.app.token);
+client.login(client.config.token);
 
