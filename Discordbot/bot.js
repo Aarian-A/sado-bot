@@ -94,5 +94,5 @@ client.on('guildMemberAdd', member => {
 
 */
 
-client.login('OTMzMjkzNTg4NDQ2NTkzMDM1.YefbYw.VHvZRfxXUpZVgVhet7THS15etsw');
+client.login('token');
 
