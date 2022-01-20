@@ -1,24 +1,15 @@
 const { Client, Intents, Message, MessageEmbed } = require('discord.js');
 
-const client = new Client({intents : [Intents.FLAGS.GUILD_MESSAGES , Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS , Intents.FLAGS.GUILDS , Intents.FLAGS.DIRECT_MESSAGE_REACTIONS , Intents.FLAGS.GUILD_MESSAGE_REACTIONS]});
-
+const client = new Client({intents : [Intents.FLAGS.GUILD_MESSAGES , Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS , Intents.FLAGS.GUILDS , Intents.FLAGS.GUILD_MEMBERS , Intents.FLAGS.DIRECT_MESSAGE_REACTIONS , Intents.FLAGS.GUILD_MESSAGE_REACTIONS]});
+//const config = require("./config.json");
+const welcome = require("./welcome");
 const prefix = "-";
 
-client.once('ready', () => {
+client.on('ready', () => {
     console.log('Sado is online!');
+    welcome(client);
 });
 
-
-client.on('guildMemberAdd', (member) => {
-  console.log(member)
-  const welcomeEmbed = new Discord.MessageEmbed()
-
-  welcomeEmbed.setColor('#000000')
-  welcomeEmbed.setTitle('**' + member.user.username + '** has joined us other **' + member.guild.memberCount + '** unswallowed members')
-  welcomeEmbed.setImage('https://i.imgflip.com/2fbyuw.jpg')
-
-  member.guild.channels.cache.find(i => i.name === 'announcements').send(welcomeEmbed)
-})
 
 
 /*
@@ -64,9 +55,9 @@ client.on('message', message => {
 
   function resetBot(channel) {
     // send channel a message that you're resetting bot [optional]
-    msg => client.destroy()
-    .then(() => client.login('token'));
     channel.send('Reset!')
+    .then(msg => client.destroy())
+    .then(() => client.login('token'));
 }
 /*
 
@@ -93,6 +84,5 @@ client.on('guildMemberAdd', member => {
 });
 
 */
-
 client.login('token');
 
