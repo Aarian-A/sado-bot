@@ -1,4 +1,4 @@
-// const welcome = require("./config.json');
+// welcome message when new user join server!
 
 module.exports = client => {
   const channelId = "759670370558541845"; 
