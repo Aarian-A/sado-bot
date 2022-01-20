@@ -50,7 +50,7 @@ git branch -d <branch_name>
 ```
 Now you can delete the remote branch:
 ```
-git push origin --delete <branch_name>
+git push -d origin <branch_name>
 ```
 
 ### Credits
