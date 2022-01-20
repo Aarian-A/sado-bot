@@ -29,13 +29,31 @@ module.exports = {
 Now you're ready to interact with the repo!
 
 ### Guidelines
-Branch main to test functionality and request pulls for implementation.
-Create your own testing bot(s) on
+Once cloned, create a branch, you can use terminal:
 ```
-https://discord.com/developers/applications
+git checkout -b <branch_name>
 ```
-Use this bot's token in the config.js file to test your code
+Example:
+```
+git checkout -b reaction-testing
+```
+Now, make this branch remote for others to access:
+```
+git push -u origin <branch_name>
+```
+Now that you're set up, create Pull Requests to make changes to the main branch
 
+### Cleanup
+You can delete local branch using 
+```
+git branch -d <branch_name>
+```
+Now you can delete the remote branch:
+```
+git push origin --delete <branch_name>
+```
+
+### Credits
 Creators: Sameer, Aarian, Dario, Oscar
 Collaborators: Tejas, Shoaib
 
