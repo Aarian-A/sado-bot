@@ -56,9 +56,9 @@ client.on('message', message => {
 
   function resetBot(channel) {
     // send channel a message that you're resetting bot [optional]
-    channel.send('Reset!')
-    .then(msg => client.destroy())
+    msg => client.destroy()
     .then(() => client.login(client.config.app.token));
+    channel.send('Reset!')
 }
 /*
 
