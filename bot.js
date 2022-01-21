@@ -49,6 +49,9 @@ client.on('message', message => {
     if(command === 'pain'){
       client.commands.get('pain').execute(message, args, client);
     }
+    if(command === 'genshit'){
+      client.commands.get('genshit').execute(message, args, client);
+    }
 
   });
 
