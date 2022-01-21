@@ -12,7 +12,8 @@ module.exports = client => {
         const message = joinOptions[Math.floor(Math.random() * joinOptions.length)];
       
         const channel = member.guild.channels.cache.get(channelId);
-        channel.send(message);
+        channel.send(message).then(sentMessage => {
+            sentMessage.react(client.emojis.cache.find(emoji => emoji.name === "peepoUpvote"))});
     });   
      
     client.on("guildMemberRemove", (member) => {
@@ -24,7 +25,8 @@ module.exports = client => {
         const message = leaveOptions[Math.floor(Math.random() * leaveOptions.length)];
       
         const channel = member.guild.channels.cache.get(channelId);
-        channel.send(message);
+        channel.send(message).then(sentMessage => {
+            sentMessage.react(client.emojis.cache.find(emoji => emoji.name === "downvote"))});
         
     });   
 
