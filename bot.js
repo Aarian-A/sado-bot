@@ -46,9 +46,8 @@ client.on('message', message => {
     if(command === 'sado'){
       client.commands.get('sado').execute(message, args);
     }
-
-    if(command === 'waah'){
-      message.channel.send(':waaah:');
+    if(command === 'pain'){
+      client.commands.get('pain').execute(message, args, client);
     }
 
   });
